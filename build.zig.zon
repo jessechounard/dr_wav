@@ -1,0 +1,19 @@
+.{
+    .name = .dr_wav,
+    .version = "0.14.0",
+    .minimum_zig_version = "0.14.0",
+    .fingerprint = 0xa6e5b08edd9ad8d4,
+    .dependencies = .{
+        .dr_wav = .{
+            .url = "git+https://github.com/mackron/dr_libs#96a18bbb3cb30a8cadf2a21f31007e3ca46decb2",
+            .hash = "N-V-__8AAKi6EgCEENGNWtROn2423fs0yQNRNqg49IvfNlJr",
+        },
+    },
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "dr_wav.c",
+    },
+}
