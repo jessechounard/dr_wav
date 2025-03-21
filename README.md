@@ -26,7 +26,14 @@ Finally, in your C++ file, you can use the library:
 int main() {
   drwav wav;
   if (!drwav_init_file(&wav, "song.wav", NULL)) {
-    // Error opening WAV file.
+    printf("Couldn't open file!\n");
+  } else {
+    printf("wav info:\n"
+           "    file:       %s\n"
+           "    channels:   %d\n"
+           "    sampleRate: %d\n",
+           "song.wav", wav.channels, wav.sampleRate);
+    drwav_uninit(&wav);
   }
   return 0;
 }```
